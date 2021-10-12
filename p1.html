@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #f0f2f7;
+            font-family: 'Poppins', sans-serif;
+        }
+        .boxes{
+            /* background-color: sandybrown; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        }
+        .boxes h1{
+            font-size: 23px;
+            font-weight: lighter;
+        }
+    .wrap textarea{
+        height: 400px;
+        width: 700px;
+        display: flex;
+        padding: 10px;
+        outline: none;
+        font-size: 18px;
+    }
+    .btn{
+        padding: 10px 35px;
+        margin: 8px 0 0 0;
+        border-radius: 4px;
+        border: none;
+       cursor: pointer;
+       background-color: rgb(191, 187, 255);
+       outline: none;
+       border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="boxes" >
+        <h1>Q 1.) Write a program that takes input Name ,Section , Roll no and Marks of 3 subjects and we have to calculate Grade <br> [ where A (>90),B (81-90),C (<= 80) ] and display Name, Section, Rollno and Grade. </h1>
+        <div class="wrap">
+            
+        <textarea name="" class="box" cols="30" rows="10">
+
+#include<iostream>
+using namespace std;
+
+class Student_info
+{
+ 
+  public:
+   char name[30],section;
+  int roll_no;
+  void get_info();
+  
+};
+
+class S_sub_info :public Student_info
+{
+    public:
+    void get_data();
+    void display();
+    
+    
+};
+
+void Student_info :: get_info()
+{
+    cout<<"Enter student Name : ";
+    cin>>name;
+    cout<<"Enter Roll NO : ";
+    cin>>roll_no;
+    cout<<"Enter Student Section : ";
+    cin>>section;
+}
+
+void S_sub_info ::get_data()
+{
+    int i;
+    int c[10];
+    cout<<"\n\n\nEnter the 3 subject marks :"<<endl;
+    for(i=1;i<=3;i++)
+    {
+        cout<<"Marks of Subject "<<i<<" ";
+        cin>>c[i];
+    }
+    int sum=c[1]+c[2]+c[3];
+    float avg=float(sum)/3.0;
+    char grade;
+    if(avg>90){
+        grade='A';
+    }
+    else if(avg>80 && avg<=90)
+    {
+        grade='B';
+    }
+    else
+    {
+        grade='C';
+    }
+    
+    cout<<"\n\n\n";
+    cout<<"Here is the result of Student\n";
+    cout<<"Student Name : "<<name<<endl;
+    cout<<"Section "<<section<<endl;
+    cout<<"Roll No :"<<roll_no<<endl;
+    cout<<"Grade is: "<<grade;
+    
+}
+
+int main()
+{
+    S_sub_info S;
+    S.get_info();
+    S.get_data();
+
+    return 0;
+}
+
+        </textarea>
+    
+    <button class="copy btn">COPY CODE</button>
+        </div>
+    </div>
+    <div class="boxes" >
+        <h1>Q 1.) Write a program that takes input Name ,Section , Roll no and Marks of 3 subjects and we have to calculate Grade <br> [ where A (>90),B (81-90),C (<= 80) ] and display Name, Section, Rollno and Grade. </h1>
+        <div class="wrap">
+            
+        <textarea name="" class="box" cols="30" rows="10">
+
+#include<iostream>
+using namespace std;
+
+class Student_info
+{
+ 
+  public:
+   char name[30],section;
+  int roll_no;
+  void get_info();
+  
+};
+
+class S_sub_info :public Student_info
+{
+    public:
+    void get_data();
+    void display();
+    
+    
+};
+
+void Student_info :: get_info()
+{
+    cout<<"Enter student Name : ";
+    cin>>name;
+    cout<<"Enter Roll NO : ";
+    cin>>roll_no;
+    cout<<"Enter Student Section : ";
+    cin>>section;
+}
+
+void S_sub_info ::get_data()
+{
+    int i;
+    int c[10];
+    cout<<"\n\n\nEnter the 3 subject marks :"<<endl;
+    for(i=1;i<=3;i++)
+    {
+        cout<<"Marks of Subject "<<i<<" ";
+        cin>>c[i];
+    }
+    int sum=c[1]+c[2]+c[3];
+    float avg=float(sum)/3.0;
+    char grade;
+    if(avg>90){
+        grade='A';
+    }
+    else if(avg>80 && avg<=90)
+    {
+        grade='B';
+    }
+    else
+    {
+        grade='C';
+    }
+    
+    cout<<"\n\n\n";
+    cout<<"Here is the result of Student\n";
+    cout<<"Student Name : "<<name<<endl;
+    cout<<"Section "<<section<<endl;
+    cout<<"Roll No :"<<roll_no<<endl;
+    cout<<"Grade is: "<<grade;
+    
+}
+
+int main()
+{
+    S_sub_info S;
+    S.get_info();
+    S.get_data();
+
+    return 0;
+}
+
+        </textarea>
+    
+    <button class="copy btn">COPY CODE</button>
+        </div>
+    </div>
+
+    <div class="boxes" >
+        <h1>Q 1.) Write a program that takes input Name ,Section , Roll no and Marks of 3 subjects and we have to calculate Grade <br> [ where A (>90),B (81-90),C (<= 80) ] and display Name, Section, Rollno and Grade. </h1>
+        <div class="wrap">
+            
+        <textarea name="" class="box" cols="30" rows="10">
+
+#include<iostream>
+using namespace std;
+
+class Student_info
+{
+ 
+  public:
+   char name[30],section;
+  int roll_no;
+  void get_info();
+  
+};
+
+class S_sub_info :public Student_info
+{
+    public:
+    void get_data();
+    void display();
+    
+    
+};
+
+void Student_info :: get_info()
+{
+    cout<<"Enter student Name : ";
+    cin>>name;
+    cout<<"Enter Roll NO : ";
+    cin>>roll_no;
+    cout<<"Enter Student Section : ";
+    cin>>section;
+}
+
+void S_sub_info ::get_data()
+{
+    int i;
+    int c[10];
+    cout<<"\n\n\nEnter the 3 subject marks :"<<endl;
+    for(i=1;i<=3;i++)
+    {
+        cout<<"Marks of Subject "<<i<<" ";
+        cin>>c[i];
+    }
+    int sum=c[1]+c[2]+c[3];
+    float avg=float(sum)/3.0;
+    char grade;
+    if(avg>90){
+        grade='A';
+    }
+    else if(avg>80 && avg<=90)
+    {
+        grade='B';
+    }
+    else
+    {
+        grade='C';
+    }
+    
+    cout<<"\n\n\n";
+    cout<<"Here is the result of Student\n";
+    cout<<"Student Name : "<<name<<endl;
+    cout<<"Section "<<section<<endl;
+    cout<<"Roll No :"<<roll_no<<endl;
+    cout<<"Grade is: "<<grade;
+    
+}
+
+int main()
+{
+    S_sub_info S;
+    S.get_info();
+    S.get_data();
+
+    return 0;
+}
+
+        </textarea>
+    
+    <button class="copy btn">COPY CODE</button>
+        </div>
+    </div>
+
+
+    <div class="boxes" >
+        <h1>Q 1.) Write a program that takes input Name ,Section , Roll no and Marks of 3 subjects and we have to calculate Grade <br> [ where A (>90),B (81-90),C (<= 80) ] and display Name, Section, Rollno and Grade. </h1>
+        <div class="wrap">
+            
+        <textarea name="" class="box" cols="30" rows="10">
+
+#include<iostream>
+using namespace std;
+
+class Student_info
+{
+ 
+  public:
+   char name[30],section;
+  int roll_no;
+  void get_info();
+  
+};
+
+class S_sub_info :public Student_info
+{
+    public:
+    void get_data();
+    void display();
+    
+    
+};
+
+void Student_info :: get_info()
+{
+    cout<<"Enter student Name : ";
+    cin>>name;
+    cout<<"Enter Roll NO : ";
+    cin>>roll_no;
+    cout<<"Enter Student Section : ";
+    cin>>section;
+}
+
+void S_sub_info ::get_data()
+{
+    int i;
+    int c[10];
+    cout<<"\n\n\nEnter the 3 subject marks :"<<endl;
+    for(i=1;i<=3;i++)
+    {
+        cout<<"Marks of Subject "<<i<<" ";
+        cin>>c[i];
+    }
+    int sum=c[1]+c[2]+c[3];
+    float avg=float(sum)/3.0;
+    char grade;
+    if(avg>90){
+        grade='A';
+    }
+    else if(avg>80 && avg<=90)
+    {
+        grade='B';
+    }
+    else
+    {
+        grade='C';
+    }
+    
+    cout<<"\n\n\n";
+    cout<<"Here is the result of Student\n";
+    cout<<"Student Name : "<<name<<endl;
+    cout<<"Section "<<section<<endl;
+    cout<<"Roll No :"<<roll_no<<endl;
+    cout<<"Grade is: "<<grade;
+    
+}
+
+int main()
+{
+    S_sub_info S;
+    S.get_info();
+    S.get_data();
+
+    return 0;
+}
+
+        </textarea>
+    
+    <button class="copy btn">COPY CODE</button>
+        </div>
+    </div>
+
+    <div class="boxes" >
+        <h1>Q 1.) Write a program that takes input Name ,Section , Roll no and Marks of 3 subjects and we have to calculate Grade <br> [ where A (>90),B (81-90),C (<= 80) ] and display Name, Section, Rollno and Grade. </h1>
+        <div class="wrap">
+            
+        <textarea name="" class="box" cols="30" rows="10">
+
+#include<iostream>
+using namespace std;
+
+class Student_info
+{
+ 
+  public:
+   char name[30],section;
+  int roll_no;
+  void get_info();
+  
+};
+
+class S_sub_info :public Student_info
+{
+    public:
+    void get_data();
+    void display();
+    
+    
+};
+
+void Student_info :: get_info()
+{
+    cout<<"Enter student Name : ";
+    cin>>name;
+    cout<<"Enter Roll NO : ";
+    cin>>roll_no;
+    cout<<"Enter Student Section : ";
+    cin>>section;
+}
+
+void S_sub_info ::get_data()
+{
+    int i;
+    int c[10];
+    cout<<"\n\n\nEnter the 3 subject marks :"<<endl;
+    for(i=1;i<=3;i++)
+    {
+        cout<<"Marks of Subject "<<i<<" ";
+        cin>>c[i];
+    }
+    int sum=c[1]+c[2]+c[3];
+    float avg=float(sum)/3.0;
+    char grade;
+    if(avg>90){
+        grade='A';
+    }
+    else if(avg>80 && avg<=90)
+    {
+        grade='B';
+    }
+    else
+    {
+        grade='C';
+    }
+    
+    cout<<"\n\n\n";
+    cout<<"Here is the result of Student\n";
+    cout<<"Student Name : "<<name<<endl;
+    cout<<"Section "<<section<<endl;
+    cout<<"Roll No :"<<roll_no<<endl;
+    cout<<"Grade is: "<<grade;
+    
+}
+
+int main()
+{
+    S_sub_info S;
+    S.get_info();
+    S.get_data();
+
+    return 0;
+}
+
+        </textarea>
+    
+    <button class="copy btn">COPY CODE</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".copy").addEventListener("click", copyText);
+        function copyText() {
+           var copyText = document.querySelector(".box");
+           copyText.select();
+           copyText.setSelectionRange(0, 99999);
+           document.execCommand("copy");
+           alert("The copied text is: " + copyText.value);
+        }
+        </script>
+</body>
+</html>
